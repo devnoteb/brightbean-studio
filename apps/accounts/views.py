@@ -233,3 +233,13 @@ def accept_terms(request):
 def logout_view(request):
     logout(request)
     return redirect("account_login")
+
+
+def terms_of_service(request):
+    """Terms of Service page."""
+    return render(request, "pages/terms_of_service.html")
+
+
+def privacy_policy(request):
+    """Privacy Policy page."""
+    return render(request, "pages/privacy_policy.html")
